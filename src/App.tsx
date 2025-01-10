@@ -7,6 +7,10 @@ import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
 
+const path = window.location.hostname.includes("github.io")
+  ? "/silky-brew-control"
+  : "/";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -14,7 +18,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route element={<Index />} />
+          <Route path={path} element={<Index />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
