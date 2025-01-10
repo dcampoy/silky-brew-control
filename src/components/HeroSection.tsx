@@ -13,7 +13,7 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-20">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Craft Your Perfect Espresso
+            The best espresso you can have
           </h1>
           <p className="text-xl md:text-2xl text-coffee-cream mb-8">
             Precision meets simplicity in our manual espresso machine. 
